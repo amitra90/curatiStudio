@@ -1,0 +1,40 @@
+/* Navbar.css */
+/* Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar h1 {
+  margin: 0;        /* Reset default heading margin */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff5a5f;
+}

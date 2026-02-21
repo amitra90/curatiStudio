@@ -1,0 +1,53 @@
+/* Hero.css */
+.hero {
+  position: relative;
+}
+
+.hero-slide {
+  position: relative;
+  height: calc(100vh - 80px); /* Adjust if you have a fixed navbar of 80px, or use 100vh */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Ensures there is no inline behavior showing alt text */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;           /* This ensures the overlay covers the whole area */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3); /* Optional: dark overlay for readability */
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-cta {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #ff5a5f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta:hover {
+  background-color: #e14c50;
+}
